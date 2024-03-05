@@ -23,19 +23,20 @@ axes[0][0].set_title("Original Image")
 axes[0][0].set_xticks([])
 axes[0][0].set_yticks([])
 
-gray, clahe, min, otsu, canny, border, final = segment(img)
+clahe, gray, min, otsu, canny, border, final = segment(img)
 
-# Grayscaling
-axes[0][1].imshow(gray, cmap="gray")
-axes[0][1].set_title("Gray Level Slicing")
+# CLAHE
+axes[0][1].imshow(clahe, cmap="gray")
+axes[0][1].set_title("CLAHE")
 axes[0][1].set_xticks([])
 axes[0][1].set_yticks([])
 
-# CLAHE
-axes[0][2].imshow(clahe, cmap="gray")
-axes[0][2].set_title("CLAHE")
+# Grayscaling
+axes[0][2].imshow(gray, cmap="gray")
+axes[0][2].set_title("Gray Level Slicing")
 axes[0][2].set_xticks([])
 axes[0][2].set_yticks([])
+
 
 # Min Pooling
 axes[0][3].imshow(min, cmap="gray")
