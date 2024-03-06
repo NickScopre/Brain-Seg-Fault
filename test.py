@@ -40,7 +40,7 @@ axes[0][2].set_yticks([])
 
 # Min Pooling
 axes[0][3].imshow(min, cmap="gray")
-axes[0][3].set_title("Min Pooling")
+axes[0][3].set_title("Min Kernel")
 axes[0][3].set_xticks([])
 axes[0][3].set_yticks([])
 

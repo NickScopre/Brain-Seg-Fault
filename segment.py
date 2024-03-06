@@ -27,7 +27,7 @@ def segment(img):
     clahe = cv2.createCLAHE(clipLimit=10.0, tileGridSize=(3, 3))
     clahe = clahe.apply(grayscaling)
 
-    # Min Pooling
+    # Minimum Kernel
     min_range = int(np.ceil(max(img.shape)*0.03))
     min = cv2.erode(clahe, np.ones((min_range, min_range), np.uint8))
 
