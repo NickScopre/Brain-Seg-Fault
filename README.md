@@ -1,7 +1,5 @@
 # Description
-A project for my CS659 class at NJIT. The goal is to implement an image segmentation algorithm from a reference research paper across a wider dataset with the hopes of creating a program to streamline the diagnosis process for MRI brain scans. The project for now will be fully on python and besides standard libraries use Numpy and MatPlotLib.
-
-For the first phase of the project, I will implement and attempt to improve upon the sequence of transformations described in the reference research paper. Later on, I intend to implement a Convolutional Neural Network to predict the diagnosis based on the original image and the segmented image to see how the segmentation changes the ease of diagnosis. 
+A project for my CS659 class at NJIT. The goal is to implement an image segmentation algorithm from a reference research paper across a wider dataset with the hopes of creating a program to streamline the diagnosis process for MRI brain scans. The project for now will be fully on python and besides standard libraries use OpenCV2, Numpy, MatPlotLib.
 
 # To Use
 Download the dataset from the Kaggle page listed under "Dataset Used." Download it as a zip file and unzip it. Rename the folder to "input" and place it in the same scope as the downloaded project. I would recommend using the "test.py" file to see how it works as the "main.py" will be very resource intensive, processing EVERY image in the directory given. 
